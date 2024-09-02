@@ -8,7 +8,57 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp
+        pausescreen.cpp
+        pausescreen.h
+        optionen.cpp
+        optionen.h
+        mainmenu.cpp
+        mainmenu.h
+        journal.cpp
+        journal.h
+        gameplay.cpp
+        gameplay.h
+        maincharacter.cpp
+        maincharacter.h
+        maincharactermodus.h
+        ingameoptions.cpp
+        ingameoptions.h
+        assestmanagergraphics.cpp
+        assestmanagergraphics.h
+        scene.cpp
+        scene.h
+        ENEMIES/Enemy.cpp
+        ENEMIES/Enemy.h
+        enemymodus.h
+        ENEMIES/Enemy1.cpp
+        ENEMIES/Enemy1.h
+        ENEMIES/Enemy2.cpp
+        ENEMIES/Enemy2.h
+        "GAME OBJECTS/gameobjects.h"
+        "GAME OBJECTS/gameobjects.cpp"
+        "GAME OBJECTS/bombs.h"
+        "GAME OBJECTS/bombs.cpp"
+        "GAME OBJECTS/robot.cpp"
+        "GAME OBJECTS/robot.h"
+        ENEMIES/Enemy3.cpp
+        ENEMIES/Enemy3.h
+        Enums.h
+        Utils.cpp
+        Utils.h
+        Wall.cpp
+        Wall.h
+        gamechoicescreen.cpp
+        gamechoicescreen.h
+        "GAME OBJECTS/stone.cpp"
+        "GAME OBJECTS/stone.h"
+        "GAME OBJECTS/movableblocks.cpp"
+        "GAME OBJECTS/movableblocks.h"
+        "GAME OBJECTS/yellowblock.cpp"
+        "GAME OBJECTS/yellowblock.h"
+        "GAME OBJECTS/blueblock.cpp"
+        "GAME OBJECTS/blueblock.h"
+)
 
 # Add config.h.in file
 configure_file(config.h.in config.h)
